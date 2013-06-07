@@ -50,9 +50,9 @@
     </organization>
 
     <!--<scm>-->
-        <!--<connection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</connection>-->
-        <!--<url>git@github.com:NitorCreations/wicket-test-utils.git</url>-->
-        <!--<developerConnection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</developerConnection>-->
+    <!--<connection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</connection>-->
+    <!--<url>git@github.com:NitorCreations/wicket-test-utils.git</url>-->
+    <!--<developerConnection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</developerConnection>-->
     <!--</scm>-->
 
     <properties>
@@ -78,6 +78,19 @@
         </dependency>
 
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.nitorcreations</groupId>
+            <artifactId>junit-runners</artifactId>
+            <version>1.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
             <version>${hamcrest.version}</version>
@@ -91,6 +104,22 @@
     </dependencies>
 
     <build>
+        <testResources>
+            <testResource>
+                <filtering>false</filtering>
+                <directory>src/test/resources</directory>
+            </testResource>
+            <testResource>
+                <filtering>false</filtering>
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**</include>
+                </includes>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
         <pluginManagement>
             <plugins>
                 <plugin>

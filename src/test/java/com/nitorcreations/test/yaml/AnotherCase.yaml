@@ -1,0 +1,4 @@
+constructedCorrectly: !to Barbabapa
+fieldAccess: !!com.nitorcreations.test.yaml.YamlRuleTest$TestObject
+  value: Value
+  fieldWithNoSetter: This field is set!

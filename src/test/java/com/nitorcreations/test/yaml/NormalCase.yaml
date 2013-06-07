@@ -1,0 +1,10 @@
+stringFromYaml: The string from Yaml
+overrideFromYaml: This is the override
+notFromYaml: This should not override
+list:
+ - A
+ - B
+ - C
+customObject: !!com.nitorcreations.test.yaml.YamlRuleTest$TestObject
+  value: Test setter
+customObjectWithConstructor: !!com.nitorcreations.test.yaml.YamlRuleTest$TestObject ["Foobar"]
