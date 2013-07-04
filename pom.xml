@@ -12,6 +12,7 @@
     <packaging>jar</packaging>
     <!-- URL & SCM MISSING -->
     <!--<url>https://github.com/NitorCreations/wicket-test-utils</url>-->
+    <url>https://github.com/NitorCreations/yaml-utils</url>
     <description>JUnit rule to load Snakeyaml files as test fixtures</description>
 
     <parent>
@@ -49,11 +50,11 @@
         <url>http://www.nitorcreations.com/</url>
     </organization>
 
-    <!--<scm>-->
-    <!--<connection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</connection>-->
-    <!--<url>git@github.com:NitorCreations/wicket-test-utils.git</url>-->
-    <!--<developerConnection>scm:git:git@github.com:NitorCreations/wicket-test-utils.git</developerConnection>-->
-    <!--</scm>-->
+    <scm>
+       <connection>scm:git:git@github.com:NitorCreations/yaml-utils.git</connection>
+       <developerConnection>scm:git:git@github.com:NitorCreations/yaml-utils.git</developerConnection>
+    </scm>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
