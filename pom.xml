@@ -100,6 +100,13 @@
             <version>${hamcrest.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.2</version>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
