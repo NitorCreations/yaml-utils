@@ -86,6 +86,10 @@ public class YamlRule implements TestRule {
         return testClass.getClass().getResourceAsStream(fileName);
     }
 
+    public Constructor getConstructor() {
+        return constructor;
+    }
+
     protected Yaml getYaml() {
         Yaml yaml = new Yaml(constructor);
         yaml.setBeanAccess(beanAccess);
